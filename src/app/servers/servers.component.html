@@ -1,6 +1,7 @@
 <button class="btn btn-primary" [disabled]="allowAddServer" (click)="onCreateServer()" >Add servers</button>
 <p>{{serverCreationStatus}}</p>
 <input type="text" (input)="onUpdateServerName($event)">
+<input type="text" [(ngModel)]="serverName" >
 {{serverName}}
 <app-server></app-server>
 <app-server></app-server>
