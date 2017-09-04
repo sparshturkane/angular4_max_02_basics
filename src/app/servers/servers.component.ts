@@ -7,12 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
     serverCreationStatus: string = 'no server is created';
+    serverName: string;
     constructor() {}
 
     ngOnInit() {}
 
     onCreateServer() {
         this.serverCreationStatus = 'server created';
+    }
+
+    onUpdateServerName(event){
+        this.serverName = event.target.value;
     }
 
 }
