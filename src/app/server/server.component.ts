@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 })
 export class ServerComponent {
     serverID: number = 10;
-    serverStatus: string = 'offline'
+    serverStatus: string = 'offline';
+    allowAddServer: boolean = false;
     getServerStatus(){
         return this.serverStatus;
     }
